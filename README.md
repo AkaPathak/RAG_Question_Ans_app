@@ -38,3 +38,9 @@ The `gpt_based_evaluation` function utilizes OpenAI's GPT-4 model to evaluate th
 
 # Demo of the app:
 !([https://github.com/username/repository/blob/main/images/logo.png](https://github.com/AkaPathak/RAG_Question_Ans_app/blob/main/Demo.png))
+
+# Screenshots of the evaluation:
+!([https://github.com/username/repository/blob/main/images/logo.png](https://github.com/AkaPathak/RAG_Question_Ans_app/blob/main/Cs_gd.png))
+!([https://github.com/username/repository/blob/main/images/logo.png](https://github.com/AkaPathak/RAG_Question_Ans_app/blob/main/Cs_md.png))
+!([https://github.com/username/repository/blob/main/images/logo.png](https://github.com/AkaPathak/RAG_Question_Ans_app/blob/main/GPT_gd.png))
+!([https://github.com/username/repository/blob/main/images/logo.png](https://github.com/AkaPathak/RAG_Question_Ans_app/blob/main/GPT_md.png))
