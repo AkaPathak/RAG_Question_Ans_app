@@ -1,0 +1,66 @@
+import pandas as pd
+Query = ["How much will you pay if my car is damaged?",
+         "Who is covered to drive other cars?",
+         "Am I covered if I leave my car unlocked or the keys in the car?",
+         "What’s not included in my cover?",
+         "Does Churchill have approved repairers?",
+         "What is DriveSure?",
+         "What’s the difference between commuting and business use?",
+         "Can I use my car abroad?",
+         "Are my electric car’s charging cables covered?",
+         "Is my electric car battery covered?"
+         ]
+Response = ["Where damage to your car is covered under your policy, we’ll pay the cost of repairing or replacing your car up to its UK market value. This is the current value of your car at the time of the claim. It may be different to the amount you paid or any amount you provided when you insured your car with us.",
+            "Your certificate of motor insurance will show who has cover to drive other cars. We’ll only cover injury to third parties, or damage caused to their property, not to the car being driven.",
+            "We won’t pay a claim for theft or attempted theft if your car is left: Unlocked; With keys or key fobs in, on, or attached to the car; With the engine running or With a window or roof open.",
+            """
+            We don’t cover things like:
+> Mechanical or electrical failure.
+> Wear and tear.
+> Damage to tyres caused by braking,
+punctures, cuts or bursts.
+> Breakdowns (if your policy includes
+Green Flag breakdown, this may cover getting your car going again).
+We won’t provide cover if your car is being used:
+> By someone who’s not insured on the policy.
+> By someone who’s disqualified from driving.
+> For a purpose that’s not allowed on the policy
+(as shown on your certificate of motor insurance).
+""",
+"""
+Churchill customers have access to a national network of approved repairers. 
+If your car is repaired by one of these, they’ll deal with all aspects of your repair.
+""",
+"""
+DriveSure is our telematics insurance product. It’s designed to capture how, when and where your car is driven, based on driver-monitoring technology. 
+We use it to understand your driving style and give you feedback. 
+This means we can base your premium on your driving record.
+""",
+"""
+Business use provides cover for driving in connection with a business or employment. 
+Your certificate of motor insurance will show if your policy includes business use and the type of business use you have.
+Commuting is driving to and from a permanent place of work, for either part of the journey, or for the whole journey. 
+This includes driving to and from a car park, railway station or bus stop as part of your journey
+""",
+"""
+If you want to use your car abroad, your cover depends on the type of policy you have and where you’re driving. 
+You may need a Green Card if you’re travelling abroad. If you need one, please get in touch before you travel. 
+We also recommend you take a European Accident Statement with you. You can get one at churchill.com/eas-form.pdf
+""",
+"""
+Your home charger and charging cables are considered an accessory to your car. This means they’re covered under ‘Section 2: Fire and theft’ or ‘Section 4: Accidental damage’ of your policy.
+You’re also covered for any accidents to others involving your charging cables when they are attached to your car. 
+For example, someone tripping over your cable, as long as you have taken due care to prevent such an accident.
+""",
+"""
+Your car’s battery is covered if it’s damaged as a result of an insured incident. 
+This cover applies whether your battery is owned or leased.
+"""
+]
+data = {
+    'Query': Query,
+    'Response':Response
+}
+
+df = pd.DataFrame(data)
+df.to_csv("manual_data.csv")
