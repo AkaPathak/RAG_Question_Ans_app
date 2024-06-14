@@ -24,7 +24,7 @@ The `gpt_based_evaluation` function utilizes OpenAI's GPT-4 model to evaluate th
 # Questions:
 
 ## 1. Construction of the dataset? 
-### There were two approached, a gpt based approach that prompt the 4.0 model to take the vector embeddings of the pdf as an input and generated question answer pairs from it. The other approach was to manually look for questions and answers in the pdf file given as input.
+### There were two approached, a gpt based approach that prompt the 4.0 model to take the vector embeddings of the pdf as an input and generated question answer pairs from it. The query-response pairs are diverse as it considers the entire document and gives very unique pairs of quer and responses. The other approach was to manually look for questions and answers in the pdf file given as input.
 
 ## 2. How and why I chose these evaluation metrics?
 ### Cosine similarity is a very good way of measruing similarity between vector embeddings and works really well with textual data. GPT-based evaluation comes in handy when sentences may be worded differently while still having the same meaning.
@@ -34,3 +34,7 @@ The `gpt_based_evaluation` function utilizes OpenAI's GPT-4 model to evaluate th
 ### 1. Used prompt engineering to improve the results of the GPT api call.
 ### 2. Set the temperature of the GPT model to 0 in order to prevent hallucinations.
 ### 3. Put a check on the results on the api call to check if the answer is not found.
+
+
+# Demo of the app:
+
