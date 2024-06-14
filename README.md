@@ -37,4 +37,4 @@ The `gpt_based_evaluation` function utilizes OpenAI's GPT-4 model to evaluate th
 
 
 # Demo of the app:
-
+![Logo](https://github.com/username/repository/blob/main/images/logo.png)
