@@ -16,7 +16,7 @@ def Cosine_Similarity(sentence1, sentence2):
 
     similarity = cosine_similarity([embedding1], [embedding2])[0][0]
 
-    similarity_threshold = 0.9
+    similarity_threshold = 0.5
 
     if similarity >= similarity_threshold:
         return True  
