@@ -15,3 +15,11 @@ The `Cosine_Similarity` function computes the cosine similarity between two inpu
 
 # gpt_based_evaluation():
 The `gpt_based_evaluation` function utilizes OpenAI's GPT-4 model to evaluate the semantic similarity between two given sentences. It sets up a template that prompts the model to compare the meanings of `sentence1` and `sentence2`. The function initializes with an API key, defines a template with placeholders for the sentences, and uses a ChatGPT model configured for inference (`ChatOpenAI(model="gpt-4", temperature=0)`). The function then processes the template through a pipeline that includes the model and an output parser (`StrOutputParser()`). It invokes the model with the provided sentences, expecting the model to respond with "True" if the sentences have similar meanings and "False" otherwise. This function leverages advanced natural language understanding capabilities of GPT-4 to perform semantic evaluations, offering a practical tool for assessing textual similarity in various applications such as content analysis and automated evaluation systems.
+
+# The thought process behind this:
+
+## I first created a vector database to store the chunks of the text in the pdf input. Then I created a rag pipeline that would take a query and pass it to gpt along with the vector database as a reference.
+
+How you constructed your dataset
+How and why you chose these evaluation metrics
+What did you try to improve the accuracy
